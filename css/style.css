@@ -5,8 +5,24 @@ body {
 }
 
 form {
-  width: 500px;
-  height: 500px;
+  width: 30%;
   background: rgba(27, 54, 77, 0.63);
   color: #FFF;
+}
+
+ul {
+	display: table;
+	width: 100%;
+}
+
+li {
+	display: table-cell;
+}
+
+li:first-child {
+	text-align: left;
+}
+
+li + li {
+	text-align: right;
 }
