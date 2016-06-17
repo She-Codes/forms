@@ -1,0 +1,12 @@
+body {
+  background: url('../images/blurred-city.jpg') no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+
+form {
+  width: 500px;
+  height: 500px;
+  background: rgba(27, 54, 77, 0.63);
+  color: #FFF;
+}
