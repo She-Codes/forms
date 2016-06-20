@@ -14,7 +14,6 @@ body {
 }
 
 a { 
-  color: rgba(255, 255, 255, 0.48);
   text-decoration: none;
   padding-bottom: .3em;
 }
@@ -54,6 +53,10 @@ li:first-child {
 
 li + li {
 	float: right;
+}
+
+li a {
+  color: rgba(255, 255, 255, 0.48);
 }
 
 .active {
@@ -119,4 +122,18 @@ i {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+  font-family: 'Yellowtail', cursive;
+  letter-spacing: .04em;
+  background: rgba(255, 255, 255, 0.37);
+  padding: .1em .4em;
+}
+
+.attribution a {
+  color: #EA4C89;
 }
