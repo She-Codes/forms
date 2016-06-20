@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: url('../images/blurred-city.jpg') no-repeat;
   background-size: cover;
@@ -15,31 +19,41 @@ a {
   padding-bottom: .3em;
 }
 
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 form {
   width: 30%;
   background: rgba(27, 54, 77, 0.63);
-  margin: 0 auto;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   padding: 3%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 ul {
-	display: table;
-	width: 100%;
   font-size: 2rem;
   padding-bottom: .3em;
 }
 
 li {
-	display: table-cell;
+	display: block;
   font-weight: 100;
 }
 
 li:first-child {
-	text-align: left;
+	float: left;
 }
 
 li + li {
-	text-align: right;
+	float: right;
 }
 
 .active {
@@ -58,7 +72,7 @@ li + li {
   position: relative;
 }
 
-label, input {
+label, input:not([type="submit"]) {
   display: block;
 }
 
@@ -67,19 +81,38 @@ label {
 }
 
 input {
-  width: 100%;
-  border-color: rgba(255, 255, 255, 0.52);
-  border-width: 0 0 1px;
-  background: transparent;
   outline: 0;
-  padding: 2px 21px 3px 0;
   font-size: .9rem;
   font-weight: 100;
   color: #FFF;
 }
 
-input:focus + i {
+input:not([type="submit"]) {
+  width: 100%;
+  border-width: 0 0 1px;
+  padding: 2px 21px 3px 0;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.52);
+}
+
+input:not([type="submit"]):focus + i {
   color: #12A8EC;
+}
+
+.wrapper.submit {
+  text-align: center;
+}
+
+label, input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: rgba(255, 255, 255, 0.35);
+  padding: .6em 3em;
+  text-transform: uppercase;
+  letter-spacing: .135em;
 }
 
 i {

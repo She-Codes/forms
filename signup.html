@@ -14,32 +14,34 @@
     <![endif]-->
 </head>
 <body>
-    <h1>Night Life Tracker</h1>
     <form>
-        <ul>
+        <ul class="grid">
             <li><a href="#" class="active">Sign Up</a></li>
             <li><a href="#">Sign In</a></li>
         </ul>
         <div class="wrapper">
-            <label>Username</label>
+            <label for="name">Username</label>
             <div class="input-wrap">
-                <input type="text">
+                <input type="text" id="name">
                 <i class="fa fa-user"></i>
             </div><!-- end .input-wrap -->
         </div><!-- end .wrapper -->
         <div class="wrapper">
-            <label>Password</label>
+            <label for="password">Password</label>
             <div class="input-wrap">
-                <input type="password">
+                <input type="password" id="password">
                 <i class="fa fa-lock"></i>
             </div><!-- end .input-wrap -->
         </div><!-- end .wrapper -->
         <div class="wrapper">
-            <label>Email</label>
+            <label for="email">Email</label>
             <div class="input-wrap">
-                <input type="email">
+                <input type="email" id="email">
                 <i class="fa fa-envelope"></i>
             </div><!-- end .input-wrap -->
+        </div><!-- end .wrapper -->
+        <div class="wrapper submit">
+            <input type="submit" value="Submit">
         </div><!-- end .wrapper -->
     </form>
 </body>
