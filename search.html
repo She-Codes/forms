@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/search.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Passion+One:400' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,18 +14,21 @@
     <![endif]-->
 </head>
 <body>
-    <h1>Movie Hunter</h1>
-    <form>
+    <form class="grid">
+        <h1>Movie Hunter</h1>
         <input type="text">
-        <select>
-            <option value="drama">Drama</option>
-            <option value="comedy">Comedy</option>
-            <option value="action">Action</option>
-            <option value="crime">Crime</option>
-            <option value="independent">Independent</option>
-            <option value="horror">Horror</option>
-        </select>
-        <input type="submit">
+        <div class="select">
+            <select>
+                <option value="drama">Drama</option>
+                <option value="comedy">Comedy</option>
+                <option value="action">Action</option>
+                <option value="crime">Crime</option>
+                <option value="independent">Independent</option>
+                <option value="horror">Horror</option>
+            </select>
+            <div class="select-arrow"></div>
+        </div><!-- .select -->
+        <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 </body>
 </html>

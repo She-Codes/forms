@@ -88,6 +88,7 @@ input {
   font-size: .9rem;
   font-weight: 100;
   color: #FFF;
+  font-family: 'Raleway', sans-serif;
 }
 
 input:not([type="submit"]) {
@@ -115,7 +116,7 @@ input[type="submit"] {
   background: rgba(255, 255, 255, 0.35);
   padding: .6em 3em;
   text-transform: uppercase;
-  letter-spacing: .135em;
+  font-weight: 500;
 }
 
 i {
