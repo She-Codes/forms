@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #EEEEEE;
+  color: #2F2F2F;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background: #CCE6F4;
+  padding: 2em;
+}
+
+h1 {
+  font-weight: 700;
+  color: #175676;
+  font-size: 1.2rem;
+}
+
+/**
+  * Hide only visually, but have it available for screen readers:
+  * html5 boilerplate 
+  * h5bp.com/v
+  */
+input[type="radio"] {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+label {
+  display: block;
+  background: #FFF;
+  padding: 2em;
+  border-bottom: 1px solid #E8E8E8;
+  cursor: pointer;
+}
+
+label:last-of-type {
+  border: 0;
+}
+
+.pseudo-label {
+  display: block;
+  padding-left: 31px;
+  position: relative;
+}
+
+.pseudo-label:before, .pseudo-label:after {
+  cursor: pointer;
+}
+
+/* outter circle */
+.pseudo-label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+  border: 2px solid #4BA3C3;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+/* inner circle */
+.pseudo-label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #175676;
+  -webkit-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  -webkit-transition: transform .28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform .28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:checked + .pseudo-label:after {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1); 
+}
