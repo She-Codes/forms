@@ -105,3 +105,47 @@ input:checked + .pseudo-label:after {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1); 
 }
+
+.with-input.pseudo-label:before {
+  top: 2px;
+}
+
+.with-input.pseudo-label:after {
+  top: 7px;
+}
+
+input[type="text"], input[type="submit"] {
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  display: inline-block;
+  border: 1px solid #175676;
+  outline: 0;
+  padding: .2em;
+  margin-left: .2em;
+}
+
+input[type="text"]:focus {
+  background: #CCE6F4;
+}
+
+input[type="submit"] {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  margin-top: 1px;
+  border: 2px solid #D62839;
+  background: #BA324F;
+  color: #FFF;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  cursor: pointer;
+  letter-spacing: .1em;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
