@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2B2D42;
+  color: #FFF;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+p {
+  text-align: center;
+}
+
+i.fa-cubes {
+  color: #F5DF72;
+  font-size: 2.7rem;
+  padding-bottom: .6em;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  display: block;
+  width: 100%;
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 4px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  margin-bottom: .7em;
+}
+
+input[type="password"] {
+  margin-bottom: 1.2em;
+}
+
+input[type="submit"] {
+  background: #4ECDC4;
+  color: #FFF;
+  padding-top: .8em;
+  padding-bottom: .8em;
+  cursor: pointer;
+}
+
+input:not([type="submit"]) {
+  padding: .8em .5em;
+  color: #2B2D42;
+  background: #E7E8F1;
+}
+
+input:not([type="submit"]):focus {
+  background: #FFF;
+}
+
+input[type="submit"]:focus {
+  background: #FFF;
+  color: #4ECDC4;
+}
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
+  color: rgba(43, 45, 66, 0.5);
+}
+
+/* Firefox 19+ */
+::-moz-placeholder { 
+  color: rgba(43, 45, 66, 0.5);
+}
+
+/* IE 10+ */
+:-ms-input-placeholder { 
+  color: rgba(43, 45, 66, 0.5);
+}
+
+/* Firefox 18- */
+:-moz-placeholder { 
+  color: rgba(43, 45, 66, 0.5);
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1em;
+  font-size: .8rem;
+  color: #B8BFBF;
+}
+
