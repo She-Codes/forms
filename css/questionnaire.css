@@ -136,7 +136,6 @@ input[type="submit"] {
   display: block;
   width: 100%;
   margin-top: 1px;
-  border: 2px solid #D62839;
   background: #BA324F;
   color: #FFF;
   font-weight: 800;
@@ -144,8 +143,11 @@ input[type="submit"] {
   font-size: 1.1rem;
   cursor: pointer;
   letter-spacing: .1em;
+  border: 0;
+  padding: .3em 0;
 }
 
 input[type="submit"]:focus {
   outline: 0;
+  background: #D62839;
 }
