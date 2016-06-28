@@ -15,12 +15,23 @@ body {
   clear: both;
 }
 
-form {
+.wrapper {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 3rem;
+  letter-spacing: .04em;
+  padding: .5em;
+  text-align: center;
+}
+
+form {
   background: #FFF;
   padding: 20px;
   border-radius: 20px;
@@ -35,15 +46,75 @@ form {
   margin-right: 20px;
 }
 
-input, textarea {
+.control {
+  position: relative;
+  padding-left: 35px;
+}
+
+label {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: calc(27px / -2);
+  width: 27px;
+  height: 27px;
+}
+
+label[for="red"] {
+  background: red;
+}
+
+label[for="green"] {
+  background: green;
+}
+
+label[for="blue"] {
+  background: blue;
+}
+
+label[for="alpha"]:before,
+label[for="alpha"]:after,
+label[for="alpha"] .bottom:before,
+label[for="alpha"] .bottom:after, 
+label[for="alpha"] .center {
   display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #CCC;
+}
+
+label[for="alpha"]:before,
+label[for="alpha"]:after,
+label[for="alpha"] .bottom:before,
+label[for="alpha"] .bottom:after {
+  content: ''; 
+}
+
+label[for="alpha"]:after {
+  right: 0;
+}
+
+label[for="alpha"] .bottom:before,
+label[for="alpha"] .bottom:after {
+  bottom: 0;
+}
+
+label[for="alpha"] .bottom:after {
+  right: 0;
+}
+
+label[for="alpha"] .center {
+  top: 9px;
+  left: 9px;
 }
 
 input {
   width: 250px;
 }
 
-input:not(:last-child) {
+.control:not(:last-child) {
   margin-bottom: 25px;
 }
 
@@ -56,10 +127,11 @@ input:not(:last-child) {
 }
 
 textarea {
+  display: block;
   border: 0;
   background: #EBEBEB;
   border-radius: 10px;
-  height: 141px;
+  height: 148px;
   width: 170px;
 }
 
