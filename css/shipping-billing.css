@@ -17,9 +17,15 @@ body {
 
 form {
   width: 800px;
-  margin: 0 auto;
+  margin: 100px auto;
   background: #F9F9F9;
   border-top: 1px solid #FF9D06;
+}
+
+h2 {
+  padding-bottom: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .billing, .shipping {
@@ -40,12 +46,12 @@ form {
   padding-bottom: 0;
 }
 
-.billing label:before {
+.billing label:not(.check-label):before {
   content: '*';
   color: #FF9D06;
 }
 
-label, input {
+label:not(.check-label), input:not([type="checkbox"]) {
   display: block;
 }
 
@@ -53,14 +59,78 @@ label {
   font-size: .75rem;
   text-transform: uppercase;
   font-weight: 600;
+  padding-bottom: .3em;
 }
 
-input {
+input[type="text"], .pseudo-check {
   border: 1px solid #CBC6C1;
+}
+
+input[type="text"] {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   padding: .3em;
   width: 100%;
   border-radius: 2px;
+  font-weight: 300;
 }
 
+input[type="text"]:focus {
+  outline: none;
+  border-color: rgba(255, 157, 6, 0.54);
+}
+
+.check-label {
+  display: inline-block;
+  padding-left: 9px;
+  font-size: .7rem;
+  cursor: pointer;
+}
+
+/**
+  * Hide only visually, but have it available for screen readers:
+  * html5 boilerplate 
+  * h5bp.com/v
+  */
+.check-label input {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.pseudo-label {
+  padding-left: .2em;
+}
+
+.pseudo-check {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #FFF;
+  border-radius: 2px;
+}
+
+.pseudo-check:after {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 2px;
+  height: 7px;
+  top: 0;
+  left: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: solid #FF9D06;
+  border-width: 0 2px 2px 0;
+}
+
+.check-label input:checked + .pseudo-check:after {
+  display: block;
+}
