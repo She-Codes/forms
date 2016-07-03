@@ -38,10 +38,15 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 label, input {
   display: block;
+}
+
+label {
+  padding-bottom: .3em;
 }
 
 .row {
@@ -69,6 +74,10 @@ input, textarea {
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
   font-size: 1.2rem;
+}
+
+textarea {
+  height: 115px;
 }
 
 input[type="submit"] {
@@ -100,6 +109,9 @@ input[type="submit"] {
   display: block;
   color: #38263C;
   width: 100%;
+  font-size: 1rem;
+  padding: .3em .7em;
+  cursor: pointer;
 }
 
 .select-arrow {
@@ -110,8 +122,9 @@ input[type="submit"] {
   border-width: 8px 5px 0 5px;
   border-style: solid;
   border-color: #38263C transparent transparent transparent;
-  top: 0;
-  right: 0;
+  top: 50%;
+  right: 10%;
+  margin-top: -4px;
 }
 
 .select select::-ms-expand {
