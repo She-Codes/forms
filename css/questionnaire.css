@@ -144,7 +144,7 @@ input[type="submit"] {
   cursor: pointer;
   letter-spacing: .1em;
   border: 0;
-  padding: .3em 0;
+  padding: 1.5em 0;
 }
 
 input[type="submit"]:focus {
