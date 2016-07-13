@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('../images/blueberries.jpeg') no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, .total-area i, input[type="submit"] {
+  color: #FFF;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+h1 span {
+  display: inline-block;
+  border: 1px solid #FFF;
+  padding: .1em;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #00A9A5;
+}
+
+form > div, .row .control {
+  float: left;
+}
+
+.total-area {
+  padding: 40px 30px 20px;
+}
+
+.total-area p {
+  text-align: center;
+}
+
+.total-area i {
+  font-size: 7rem;
+}
+
+.total, .amount {
+  color: #0B5351;
+}
+
+.total {
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: 2em 0 .5em;
+}
+
+.amount {
+  font-size: 2.5rem;
+}
+
+.form-elements {
+  background: #FFF;
+  padding: 20px;
+  color: #092327;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.row:nth-of-type(2) .control:first-child {
+  width: 70%;
+}
+
+.row:nth-of-type(2) .control:nth-child(2) {
+  width: 30%;
+  padding-left: 10px;
+}
+
+.row:nth-of-type(3) .control {
+  width: 50%;
+}
+
+.row:nth-of-type(3) .control:first-child {
+  padding-right: 20px;
+}
+
+h2 {
+  font-size: 2.3rem;
+  padding-bottom: .7em;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  color: #90C2E7;
+  padding-bottom: .2em;
+}
+
+input, .select select {
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="text"], input[type="password"] {
+  border: 0;
+  border-bottom: 1px solid #00A9A5;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: #00A9A5;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+}
+
+.select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #4E8098;
+  width: 100%;
+  border-radius: 0;
+  background: #FFF;
+  padding: .45em;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #4E8098 transparent transparent transparent;
+  top: 50%;
+  right: 10%;
+  margin-top: -4px;
+}
+
+@media (max-width: 1270px) {
+  form {
+    width: 60%;
+  }
+
+  .total-area {
+    width: 23%;
+  }
+
+  .form-elements {
+    width: 77%;
+  }
+}
+
+

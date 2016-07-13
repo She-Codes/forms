@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Credit / Debit Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/credit-debit.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,900' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body> 
+    <h1><span>Food Box</span></h1>       
+    <form class="grid">
+        <div class="total-area">
+            <p><i class="fa fa-shopping-cart"></i></p>
+            <p class="total">Total</p>
+            <p class="amount"><span>$</span>34</p>
+        </div><!-- end .total-area -->
+
+        <div class="form-elements">
+            <h2>Checkout</h2>
+
+            <div class="control">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name">
+            </div><!-- end .control -->
+
+            <div class="row grid">
+                <div class="control">
+                    <label for="card">Card Number</label>
+                    <input type="password" maxlength="19" id="card">
+                </div><!-- end .control -->
+
+                <div class="control">
+                    <label for="csv">CSV</label>
+                    <input type="password" maxlength="3" id="csv">
+                </div><!-- end .control -->
+            </div><!-- end .row -->
+
+            <div class="row grid">
+                <div class="control">
+                    <label for="month">Expiration Month</label>
+                    <div class="select">
+                        <select id="month">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                        <div class="arrow"></div>
+                    </div><!-- end .select -->
+                </div><!-- end .control -->
+
+                <div class="control">
+                    <label for="year">Expiration Year</label>
+                    <div class="select">
+                        <select id="year">
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                        <div class="arrow"></div>
+                    </div><!-- end .select -->
+                </div><!-- end .control -->
+            </div><!-- end .row -->
+            <input type="submit" value="Purchase">
+        </div><!-- end .form-elements -->
+    </form>
+</body>
+</html>

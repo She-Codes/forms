@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #E6E5E6;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #38263C;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  padding: 10px;
+  width: 650px;
+}
+
+.wrapper {
+  padding: 20px 10px 20px;
+}
+
+h1, label {
+  color: #38263C;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  padding-bottom: .3em;
+}
+
+.row {
+  margin-bottom: 25px;
+}
+
+.row .control {
+  float: left;
+}
+
+input:not([type="submit"]), textarea, .wrapper {
+  border: 1px solid #38263C;
+}
+
+input:not([type="submit"]), textarea {
+  padding: .3em;
+}
+
+input:not([type="submit"]):focus, textarea:focus {
+  background: rgba(56, 38, 60, 0.12);
+  outline: 0;
+}
+
+input, textarea {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+textarea {
+  height: 115px;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: #38263C;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: .7em 0 .5em;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  color: #38263C;
+}
+
+.select {
+  position: relative;
+}
+
+.select select {
+  border: 1px solid #38263C;
+  background: #FFF;
+  outline: 0;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  color: #38263C;
+  width: 100%;
+  font-size: 1rem;
+  padding: .3em .7em;
+  cursor: pointer;
+}
+
+.select-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #38263C transparent transparent transparent;
+  top: 50%;
+  right: 10%;
+  margin-top: -4px;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+.row:first-of-type .control:first-child, 
+.row:first-of-type .control:nth-child(2) {
+  width: calc(40% - 10px);
+  margin-right: 10px;
+}
+
+.row:first-of-type .control:nth-child(3) {
+  width: 20%;
+}
+
+.row:first-of-type + .row .control:first-child {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+}
+
+.row:first-of-type + .row .control:nth-child(2) {
+  width: calc(50% - 5px);
+}

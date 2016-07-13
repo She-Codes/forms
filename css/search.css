@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #48A9A6;
+  color: #FFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: table;
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 4.3rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: .35em;
+}
+
+input, button, select {
+  font-size: 1.3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.29);
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  height: 40px;
+}
+
+input, select {
+  background: #FFF;
+}
+
+input, button, .select {
+  float: left;
+}
+
+input, .select {
+  margin-right: 10px;
+}
+
+input {
+  width: 350px;
+  padding: 0 1em;
+}
+
+input:focus {
+  background: #CCC;
+}
+
+/* Select styles */
+.select {
+  position: relative;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding: 0 3em 0 .6em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.select-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #C1666B transparent transparent transparent;
+  top: 50%;
+  right: 9%;
+  margin-top: -4px;
+  pointer-events: none;
+}
+
+button {
+  background: #C1666B;
+  color: #FFF;
+  font-size: 1.1rem;
+  padding: 0 1em;
+  cursor: pointer;
+}
+
+button:hover, button:active {
+  background: #FFF;
+  color: #C1666B;
+}

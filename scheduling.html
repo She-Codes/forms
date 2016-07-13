@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scheduling Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/scheduling.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,100,600,700' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body>        
+    <form>
+        <div class="wrapper">
+            <h1>Appointment Scheduling</h1>
+            <div class="row grid">
+                <div class="control">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div><!-- end .control -->
+
+                <div class="control">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                </div><!-- end .control -->
+
+                <div class="control">
+                    <label for="timezone">Timezone</label>
+                    <div class="select">
+                        <select id="timezone">
+                            <option value="ACDT">AKDT</option>
+                            <option value="CDT">CDT</option>
+                            <option value="EDT">EDT</option>
+                            <option value="HST">HST</option>
+                            <option value="MDT">MDT</option>
+                            <option value="PDT">PDT</option>
+                        </select>
+                        <div class="select-arrow"></div>
+                    </div>
+                </div><!-- end .control -->
+            </div><!-- end .row -->
+
+            <div class="row grid">
+                <div class="control">
+                    <label for="number">Number</label>
+                    <input type="tel" id="number">
+                </div><!-- end .control -->
+
+                <div class="control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div><!-- end .control -->
+            </div><!-- end .row -->
+
+            <div class="control">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </div><!-- end .control -->
+
+            <input type="submit" value="submit">    
+        </div><!-- end .wrapper -->    
+    </form>
+</body>
+</html>

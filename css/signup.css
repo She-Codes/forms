@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('../images/blurred-city.jpg') no-repeat;
+  background-size: cover;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+a { 
+  text-decoration: none;
+  padding-bottom: .3em;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  width: 30%;
+  background: rgba(27, 54, 77, 0.63);
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  padding: 3%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  font-size: 2rem;
+  padding-bottom: .3em;
+}
+
+li {
+	display: block;
+  font-weight: 100;
+}
+
+li:first-child {
+	float: left;
+}
+
+li + li {
+	float: right;
+}
+
+li a {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.active {
+  border-bottom: 1px solid #FFF;
+}
+
+.active {
+  color: #FFF;
+}
+
+.wrapper {
+  margin-top: 1.7rem;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+label, input:not([type="submit"]) {
+  display: block;
+}
+
+label {
+  padding-bottom: .6em;
+}
+
+input {
+  outline: 0;
+  font-size: .9rem;
+  font-weight: 100;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+input:not([type="submit"]) {
+  width: 100%;
+  border-width: 0 0 1px;
+  padding: 2px 21px 3px 0;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.52);
+}
+
+input:not([type="submit"]):focus + i {
+  color: #12A8EC;
+}
+
+.wrapper.submit {
+  text-align: center;
+}
+
+label, input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: rgba(255, 255, 255, 0.35);
+  padding: .6em 3em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+i {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+  font-family: 'Yellowtail', cursive;
+  letter-spacing: .04em;
+  background: rgba(255, 255, 255, 0.37);
+  padding: .1em .4em;
+}
+
+.attribution a {
+  color: #EA4C89;
+}

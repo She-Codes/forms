@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #D6444E;
+  color: #E8DBB5;
+  font-family: 'Slabo 27px', serif;
+  padding: 20px;
+}
+
+/* Float Fix */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  padding-bottom: .5em;
+}
+
+a {
+  color: #E8DBB5;
+}
+
+h1, ul {
+  text-align: center;
+}
+
+li {
+  font-size: 2.5em;
+  line-height: 2;
+}
+
